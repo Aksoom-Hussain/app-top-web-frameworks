@@ -43,7 +43,7 @@ async function main() {
     })),
   ];
 
-  await client.batch("write", statements);
+  await client.batch(statements, "write");
 
   console.log("Seeded db");
 }
